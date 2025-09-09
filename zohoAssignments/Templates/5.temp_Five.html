@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Header Topnav Leftnav Content Footer</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      header,
+      nav.top,
+      footer {
+        background: #999;
+        padding: 1rem;
+        text-align: center;
+      }
+      .content-area {
+        flex: 1;
+        display: flex;
+      }
+      nav.side {
+        width: 200px;
+        background: #bbb;
+        padding: 1rem;
+      }
+      main {
+        flex: 1;
+        background: #ddd;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav class="top" style="margin-top: 10px">Topnav</nav>
+    <div class="content-area">
+      <nav class="side">Leftnav</nav>
+      <main>Content</main>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>

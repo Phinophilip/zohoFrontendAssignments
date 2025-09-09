@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Create your Zoho account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="icon" type="image/png" href="zslogo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="zohoschools.png" alt="Zoho Schools Logo" />
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="registration-form">
+      <div class="formhead">
+        <div class="image">
+          <img src="Zoho_idEOeyP8-7_0.png" alt="zs" />
+        </div>
+        <h2>Create your Zoho account!</h2>
+      </div>
+      <div class="form-container">
+        <form id="registerForm" action="#" method="post" novalidate>
+          <div class="name">
+            <div class="name-group">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                minlength="2"
+                placeholder="First Name"
+              />
+              <span id="firstName-error" class="error-message"></span>
+            </div>
+
+            <div class="name-group">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                minlength="2"
+                placeholder="Last Name"
+              />
+              <span id="lastName-error" class="error-message"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Email Address"
+            />
+            <span id="email-error" class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Mobile Number"
+              required
+              pattern="[0-9]{10}"
+            />
+            <span id="phone-error" class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div style="position: relative">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                style="padding-right: 30px"
+              />
+              <i
+                class="fas fa-eye"
+                id="togglePasswordIcon"
+                style="
+                  position: absolute;
+                  right: 10px;
+                  top: 35px;
+                  cursor: pointer;
+                "
+              ></i>
+            </div>
+            <span id="password-error" class="error-message"></span>
+          </div>
+
+          <div class="form-group terms">
+            <label>
+              <input type="checkbox" id="terms" name="terms" required />
+              <span class="terms"
+                >I agree to the
+                <a href="#" style="text-decoration: none"
+                  >Terms of service and Privacy policies</a
+                >
+                of Zoho Corporation</span
+              >
+            </label>
+            <span id="terms-error" class="error-message"></span>
+          </div>
+
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+      <br />
+      <h4>Sign up using</h4>
+      <div class="logos">
+        <div>
+                   
+          <a
+            href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?state=b1f96df2560d2e4f4dafa32659d7025215f89e4b0a1156fbf81859e922dd483b0eff59be2a046d5872103a9ae78f5f8f4bdb5b96756d20440497c0a110ef65eb78bfefc9f1c8c2309fd0fd7c4602a9b60197b673549ac59f151dbae091cb935ce4b427e5c28b5b8c36c9dd4eddd3ce7c7e2159619e52ad7aa832942b3c68b3d37fe8bbf0e70850c100fe18a321701e83&response_type=code&redirect_uri=https%3A%2F%2Faccounts.zoho.in%2Faccounts%2Foauthcallback&client_id=872160754795-psnhnfpu7jklql9dajmkrad2j15gp88p.apps.googleusercontent.com&scope=openid%20email%20profile&prompt=select_account&service=lso&o2v=2&flowName=GeneralOAuthFlow"
+            ><img src="search.png"
+          /></a>
+                 
+        </div>
+               
+        <div>
+                   
+          <a
+            href="https://www.facebook.com/login.php?skip_api_login=1&api_key=326461920176&kid_directed_site=0&app_id=326461920176&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv17.0%2Fdialog%2Foauth%3Fclient_id%3D326461920176%26scope%3Demail%26redirect_uri%3Dhttps%253A%252F%252Faccounts.zoho.in%252Faccounts%252Foauthcallback%26response_type%3Dcode%26state%3Ddbfc57ff5ecac930dc81dae258cd9aab84163273a87471981a02853424d49a2572422d974c4c666e6e286c24363f1e4f3dde222c815bf8452afdaa9fe3450f7e9bc20287f522fe1f6492c5474a200fe34cafd4e205dfd89b27e79de77bb1f95d92910b4e94f9349adcc34bd2c2cd146eac62ee2056e892b4027553aa3b56ae0cd99c036bd7fe04be032b94a32a99f38e%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D49097957-da29-458f-816f-22c43eebfeec%26tp%3Dunspecified&cancel_url=https%3A%2F%2Faccounts.zoho.in%2Faccounts%2Foauthcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Ddbfc57ff5ecac930dc81dae258cd9aab84163273a87471981a02853424d49a2572422d974c4c666e6e286c24363f1e4f3dde222c815bf8452afdaa9fe3450f7e9bc20287f522fe1f6492c5474a200fe34cafd4e205dfd89b27e79de77bb1f95d92910b4e94f9349adcc34bd2c2cd146eac62ee2056e892b4027553aa3b56ae0cd99c036bd7fe04be032b94a32a99f38e%23_%3D_&display=page&locale=en_GB&pl_dbl=0"
+            ><img src="facebook.png"
+          /></a>
+                 
+        </div>
+               
+        <div>
+                   
+          <a
+            href="https://x.com/i/flow/login?redirect_after_login=%2Fi%2Foauth2%2Fauthorize%3Fclient_id%3DSXc4eEFFNkRQZkpDVVBVU3A1Y2s6MTpjaQ%26scope%3Dusers%252Eread%2520tweet%252Eread%2520users%252Eemail%26redirect_uri%3Dhttps%253A%252F%252Faccounts.zoho.in%252Faccounts%252Foauthcallback%26response_type%3Dcode%26state%3Dd25c519b076b88783452f6e78e44c17b4ce37ee6257e95798eb8ae0ae0e8260344bf371a974f3d2a05816d52a3415f94b89bb21a725cd5767b6093b008aec13011198402904bcbe1cbc091850ab0bbc2f633c0c9f9901023ff3f573bcfd64fd04051fcf7b0716a50154ec487b940181304a0b70181a935992924be76f50958b4ca14e505a8d91f56e9c4ee270360aa39%26code_challenge%3Dchallenge%26code_challenge_method%3Dplain"
+            ><img src="twitter.png"
+          /></a>
+                 
+        </div>
+               
+        <div>
+                   
+          <a
+            href="https://www.linkedin.com/uas/login?session_redirect=%2Foauth%2Fv2%2Flogin-success%3Fapp_id%3D3971841%26auth_type%3DAC%26flow%3D%257B%2522state%2522%253A%2522a7011001418a295433e6c163d3abee6a93e3ade3a30c43c65dae3ac5e24cf4b889c51cb8b78e4cd1c857d1eedf9a0b80501b87ad776ebdca1e0cf2b41fc2cd38eb5c7b365ee4fa94d1e95dc6a0cc5d4fe8ac648edbf0663218a0c9fa0fe3c2d5fb037c648e014918e7d7e6051e41a1fb9f518c912bbe2bca2b5d62e2ed4238a374cfb5f4ddbbefdcac9029e913c41cd1%2522%252C%2522creationTime%2522%253A1756812376953%252C%2522appId%2522%253A3971841%252C%2522scope%2522%253A%2522openid%2Bprofile%2Bemail%2522%252C%2522authorizationType%2522%253A%2522OAUTH2_AUTHORIZATION_CODE%2522%252C%2522redirectUri%2522%253A%2522https%253A%252F%252Faccounts.zoho.in%252Faccounts%252Foauthcallback%2522%252C%2522currentStage%2522%253A%2522LOGIN_SUCCESS%2522%252C%2522currentSubStage%2522%253A0%252C%2522authFlowName%2522%253A%2522generic-permission-list%2522%257D&fromSignIn=1&trk=oauth&cancel_redirect=%2Foauth%2Fv2%2Flogin-cancel%3Fapp_id%3D3971841%26auth_type%3DAC%26flow%3D%257B%2522state%2522%253A%2522a7011001418a295433e6c163d3abee6a93e3ade3a30c43c65dae3ac5e24cf4b889c51cb8b78e4cd1c857d1eedf9a0b80501b87ad776ebdca1e0cf2b41fc2cd38eb5c7b365ee4fa94d1e95dc6a0cc5d4fe8ac648edbf0663218a0c9fa0fe3c2d5fb037c648e014918e7d7e6051e41a1fb9f518c912bbe2bca2b5d62e2ed4238a374cfb5f4ddbbefdcac9029e913c41cd1%2522%252C%2522creationTime%2522%253A1756812376953%252C%2522appId%2522%253A3971841%252C%2522scope%2522%253A%2522openid%2Bprofile%2Bemail%2522%252C%2522authorizationType%2522%253A%2522OAUTH2_AUTHORIZATION_CODE%2522%252C%2522redirectUri%2522%253A%2522https%253A%252F%252Faccounts.zoho.in%252Faccounts%252Foauthcallback%2522%252C%2522currentStage%2522%253A%2522LOGIN_SUCCESS%2522%252C%2522currentSubStage%2522%253A0%252C%2522authFlowName%2522%253A%2522generic-permission-list%2522%257D"
+            ><img src="social (1).png"
+          /></a>
+                 
+        </div>
+               
+        <div>
+                   
+          <a
+            href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=68f7630c-af38-493e-af0d-42e1a23146a7&scope=https%3A%2F%2Fgraph%2Emicrosoft%2Ecom%2F%2Edefault&redirect_uri=https%3A%2F%2Faccounts.zoho.in%2Faccounts%2Foauthcallback&response_type=code&state=3b2c9b910266e75031e44864fcfcd1adb11853427fa4daa603e8963494ad1d78579b061f985713b56ebbc23fdc3b53021ffd539b6058295f5194047148cddf4b0472a8030298de6df152cf2e12d5d3264cafc182752d0dd3a72d8350b4ec4d1b479aa73f89bcf851e5b341e4fbfa04ff04cd75dffdf41b69bf4c3574c130371ce3a15f106c2fcb5ced0710984c90c447&sso_reload=true"
+            ><img src="microsoft.png"
+          /></a>
+                 
+        </div>
+             
+      </div>
+         
+    </div>
+    <script src="register.js"></script>
+    <footer>
+      <h3>2025 All rights are resverd to Zoho Corporation</h3>
+    </footer>
+  </body>
+</html>

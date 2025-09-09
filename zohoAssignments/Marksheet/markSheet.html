@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Grade Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      body {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        width: 250mm;
+        min-height: 300mm;
+        background-color: #e8f3ec;
+        border: 10px groove black;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .college {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        font-size: x-large;
+      }
+
+      .header img {
+        height: 100px;
+      }
+      .college-info {
+        text-align: center;
+        flex: 1;
+        margin-top: 15px;
+      }
+
+      .subtitle {
+        font-size: 13.5px;
+        margin: 5px 0;
+        font-weight: bold;
+      }
+
+      h2,
+      h3 {
+        margin: 5px 0;
+      }
+
+      .right-section {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      #mine {
+        height: 110px;
+        margin-left: 15px;
+      }
+
+      .details {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        font-size: 14px;
+        margin: 10px 0;
+      }
+      .details .left {
+        text-align: left;
+      }
+
+      .details .right {
+        text-align: right;
+        font-weight: bold;
+      }
+      table {
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+      }
+
+      #top {
+        font-weight: bold;
+      }
+
+      #tablelogo {
+        width: 30%;
+        opacity: 0.2;
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        z-index: 5;
+      }
+
+      th {
+        padding: 13px;
+        text-align: center;
+      }
+
+      td {
+        padding: 11px;
+      }
+      .note-line {
+        font-size: 12px;
+        margin: 8px 0 12px;
+        text-align: left;
+      }
+      .legend-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 120px;
+        font-size: 12px;
+        margin-right: 10px;
+        margin: 15px 0 16px;
+      }
+      .bottom-bar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 24px;
+      }
+      .signatures {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        width: 70%;
+      }
+      .sig .label {
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="logo.png" alt="College Logo" id="srm" />
+
+        <div class="college-info">
+          <h2 class="college">EASWARI ENGINEERING COLLEGE</h2>
+          <div class="subtitle">
+            Chennai - 600089, India<br />
+            (An Autonomous Institution, Affiliated to Anna University,
+            Chennai)<br />
+            B.E. / B.Tech. / M.E. / M.B.A. DEGREE EXAMINATIONS
+          </div>
+          <h3 style="margin-top: 15px">GRADE SHEET</h3>
+        </div>
+
+        <div class="right-section">
+          <img src="annalogo.png" alt="Anna University Logo" id="univ" />
+          <img src="photo.jpg" alt="Student Photo" id="mine" />
+        </div>
+      </div>
+      <div class="details">
+        <span class="left"
+          ><b>Sr. No.: </b><b style="font-size: larger">A011262</b></span
+        >
+        <span class="right">Folio No.: 2205063072</span>
+      </div>
+      <div id=" body" class="table">
+        <div id="top">
+          <table border="1">
+            <tr>
+              <td>NAME OF THE CANDIDATE</td>
+              <td colspan="5">PHINEHAS KIRUBAKARAN M</td>
+              <td>REGISTER No.</td>
+              <td>310619106095</td>
+            </tr>
+            <tr>
+              <td>DATE OF BIRTH</td>
+              <td>07 Nov 2001</td>
+              <td>GENDER</td>
+              <td>MALE</td>
+              <td>MONTH & YEAR OF EXAMINATION</td>
+              <td>APR 2020</td>
+              <td>DATE OF PUBLICATION</td>
+              <td>29-OCT-2020</td>
+            </tr>
+            <tr>
+              <td>PROGRAMME & BRANCH</td>
+              <td colspan="5">BE-Electronics And Communication Engineering</td>
+              <td>REGULATION</td>
+              <td>R2019</td>
+            </tr>
+          </table>
+        </div>
+        <div id="mid">
+          <table border="1">
+            <tr>
+              <th>SEM NO.</th>
+              <th>COURSE CODE</th>
+              <th style="width: 90%">COURSE TITLE</th>
+              <th>ATT.CODE</th>
+              <th>CREDITS</th>
+              <th>LETTER GRADE</th>
+              <th>GRADE POINT</th>
+              <th>RESULT</th>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td>2</td>
+              <td>191CYM201T</td>
+              <td>ENVIRONMENTAL SCIENCE</td>
+              <td>H</td>
+              <td>3</td>
+              <td>O</td>
+              <td>10</td>
+              <td>PASS</td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td>2</td>
+              <td>191ECC201T</td>
+              <td>ELECTRIC CIRCUITS AND ELECTRONICS DEVICES</td>
+              <td>M</td>
+              <td>4</td>
+              <td>O</td>
+              <td>10</td>
+              <td>PASS</td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td>2</td>
+              <td>191ECC211L</td>
+              <td>CIRUCITS AND DEVICES LABORATORY</td>
+              <td>H</td>
+              <td>2</td>
+              <td>O</td>
+              <td>10</td>
+              <td>PASS</td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td>2</td>
+              <td>191GES203T</td>
+              <td>BASIC CIVIL AND MECHANICAL ENGINEERING</td>
+              <td>H</td>
+              <td>3</td>
+              <td>O</td>
+              <td>10</td>
+              <td>PASS</td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td>2</td>
+              <td>191GES211L</td>
+              <td>ENGINNERING PRACTICES LABORATORY</td>
+              <td>H</td>
+              <td>2</td>
+              <td>O</td>
+              <td>10</td>
+              <td>PASS</td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td>2</td>
+              <td>191LEH201T</td>
+              <td>PROFESSIONAL COMMUNICATION</td>
+              <td>M</td>
+              <td>3</td>
+              <td>A</td>
+              <td>8</td>
+              <td>PASS</td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td>2</td>
+              <td>191MAB201T</td>
+              <td>ENGINNERING MATHEMATICS-II</td>
+              <td>H</td>
+              <td>4</td>
+              <td>O</td>
+              <td>10</td>
+              <td>PASS</td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td>2</td>
+              <td>191PYB201T</td>
+              <td>PHYSICS FOR ELECTRONICS ENGINEERING</td>
+              <td>H</td>
+              <td>3</td>
+              <td>O</td>
+              <td>10</td>
+              <td>PASS</td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="border-bottom: 0">
+              <td></td>
+              <td></td>
+              <td>
+                <b
+                  >*Extra credits earened in this current semester,but not
+                  considered for CCPA calculation:3 credits</b
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <img src="logo.png" id="tablelogo" />
+        </div>
+        <div id="bottom">
+          <table border="1">
+            <tr>
+              <th style="text-align: left">Semester</th>
+              <th>I</th>
+              <th>II</th>
+              <th>III</th>
+              <th>IV</th>
+              <th>V</th>
+              <th>VI</th>
+              <th>VII</th>
+              <th>VIII</th>
+            </tr>
+            <tr>
+              <td><b>Credits Registered</b></td>
+              <td></td>
+              <td style="text-align: center"><b>24</b></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>Credits Earned</b></td>
+              <td></td>
+              <td style="text-align: center"><b>24</b></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>Grade Points Earned</b></td>
+              <td></td>
+              <td style="text-align: center"><b>78</b></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>Grade Points Average(GPA)</b></td>
+              <td></td>
+              <td style="text-align: center"><b>9.714</b></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>Cumulative Credits Earned</b></td>
+              <td style="text-align: center"><b>49</b></td>
+              <td colspan="3" style="text-align: center">
+                <b>Cummulative Grade Point Average(CGPA)</b>
+              </td>
+              <td><b>9.07</b></td>
+              <td colspan="3" style="text-align: center">
+                <b>Medium Of Instruction : English</b>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <br />
+      <div id="footer" class="foot">
+        <div class="legend-row">
+          <span>RA - Re-appearance is required</span>
+          <span>W - Withdrawal</span>
+          <span>SE - Sports Exemption</span>
+          <span>* - Absent for Examination</span>
+        </div>
+        <br />
+        <div class="bottom-bar" style="margin-top: -50px">
+          <div class="left-block">
+            <div class="line">
+              <img src="College_seal-removebg-preview.png" />
+            </div>
+            <div>Chennai : <b>600 089</b></div>
+            <div>Date : <b>06/May/2022</b></div>
+          </div>
+          <div class="signatures">
+            <div class="sig">
+              <div class="line" style="margin-top: 91px">
+                <img width="300px" src="mysign.png" />
+              </div>
+              <div class="label">SIGNATURE OF THE CANDIDATE</div>
+            </div>
+            <div class="sig">
+              <div class="line" style="margin-top: 109px; margin-left: 75px">
+                <img src="sign.png" />
+              </div>
+              <div class="label">CONTROLLER OF EXAMINATIONS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
