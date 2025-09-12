@@ -39,34 +39,32 @@
         <form id="registerForm" action="#" method="post" novalidate>
           <div class="name">
             <div class="name-group">
-              <label for="firstName">First Name</label>
+              <label for="firstName" style="opacity: 0">First Name</label>
               <input
                 type="text"
                 id="firstName"
                 name="firstName"
-                required
-                minlength="2"
                 placeholder="First Name"
+                required
               />
               <span id="firstName-error" class="error-message"></span>
             </div>
 
             <div class="name-group">
-              <label for="lastName">Last Name</label>
+              <label for="lastName" style="opacity: 0">Last Name</label>
               <input
                 type="text"
                 id="lastName"
                 name="lastName"
-                required
-                minlength="2"
                 placeholder="Last Name"
+                required
               />
               <span id="lastName-error" class="error-message"></span>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="email">Email Address</label>
+            <label for="email" style="opacity: 0">Email Address</label>
             <input
               type="email"
               id="email"
@@ -78,7 +76,7 @@
           </div>
 
           <div class="form-group">
-            <label for="phone">Phone Number</label>
+            <label for="phone" style="opacity: 0">Phone Number</label>
             <input
               type="tel"
               id="phone"
@@ -91,7 +89,7 @@
           </div>
 
           <div class="form-group">
-            <label for="password">Password</label>
+            <label for="password" style="opacity: 0">Password</label>
             <div style="position: relative">
               <input
                 type="password"
@@ -114,7 +112,7 @@
             <span id="password-error" class="error-message"></span>
           </div>
 
-          <div class="form-group terms">
+          <div class="form-group terms" style="margin-top: 25px">
             <label>
               <input type="checkbox" id="terms" name="terms" required />
               <span class="terms"
@@ -132,7 +130,7 @@
         </form>
       </div>
       <br />
-      <h4>Sign up using</h4>
+      <h4 style="color: #03a9f5">Sign up using</h4>
       <div class="logos">
         <div>
                    
@@ -188,4 +186,5 @@
     </footer>
   </body>
 </html>
+
 
