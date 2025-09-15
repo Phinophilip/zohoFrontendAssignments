@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Header, Topnav, Leftnav, Content, Rightnav, Footer</title>
+    <title>Header Leftnav Content Rightnav Footer</title>
     <style>
       body {
         margin: 0;
@@ -10,46 +10,46 @@
         flex-direction: column;
         height: 100vh;
       }
-
-      header,
-      nav.top,
-      footer {
-        background: #999;
+      header {
+        background: #ff6b6b;
         padding: 1rem;
         text-align: center;
       }
-
+      footer {
+        background: #6a4c93;
+        padding: 1rem;
+        text-align: center;
+        color: white;
+      }
       .content-area {
         flex: 1;
         display: flex;
-        min-height: 0;
       }
-
-      nav.left,
-      nav.right {
+      nav.left {
         width: 200px;
-        background: #bbb;
+        background: #ffe66d;
         padding: 1rem;
       }
-
       main {
         flex: 1;
-        background: #ddd;
+        background: #1a535c;
+        color: white;
         padding: 1rem;
-        overflow-y: auto;
+      }
+      nav.right {
+        width: 200px;
+        background: #ff9f1c;
+        padding: 1rem;
       }
     </style>
   </head>
   <body>
     <header>Header</header>
-    <nav class="top" style="margin-top: 10px">Topnav</nav>
-
     <div class="content-area">
       <nav class="left">Leftnav</nav>
       <main>Content</main>
       <nav class="right">Rightnav</nav>
     </div>
-
     <footer>Footer</footer>
   </body>
 </html>
